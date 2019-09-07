@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/TubeYou/static/css/main.9ab1767b.chunk.css",
+    "main.css": "/TubeYou/static/css/main.82c42692.chunk.css",
     "main.js": "/TubeYou/static/js/main.361aff03.chunk.js",
     "main.js.map": "/TubeYou/static/js/main.361aff03.chunk.js.map",
     "runtime~main.js": "/TubeYou/static/js/runtime~main.21f23277.js",
@@ -8,8 +8,8 @@
     "static/js/2.037e207f.chunk.js": "/TubeYou/static/js/2.037e207f.chunk.js",
     "static/js/2.037e207f.chunk.js.map": "/TubeYou/static/js/2.037e207f.chunk.js.map",
     "index.html": "/TubeYou/index.html",
-    "precache-manifest.e9846ed46f631535b210cc036ad3ec5c.js": "/TubeYou/precache-manifest.e9846ed46f631535b210cc036ad3ec5c.js",
+    "precache-manifest.f86cc6a11ac5a12c4a2536aa56c8c853.js": "/TubeYou/precache-manifest.f86cc6a11ac5a12c4a2536aa56c8c853.js",
     "service-worker.js": "/TubeYou/service-worker.js",
-    "static/css/main.9ab1767b.chunk.css.map": "/TubeYou/static/css/main.9ab1767b.chunk.css.map"
+    "static/css/main.82c42692.chunk.css.map": "/TubeYou/static/css/main.82c42692.chunk.css.map"
   }
 }

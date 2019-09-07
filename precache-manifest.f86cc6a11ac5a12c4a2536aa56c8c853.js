@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b420d7557e0a5d8b97dcf43fb35cb97e",
+    "revision": "89e2bd922f8cf675189c6d6f986561ac",
     "url": "/TubeYou/index.html"
   },
   {
-    "revision": "e70b0e472bc3e4e4c776",
-    "url": "/TubeYou/static/css/main.9ab1767b.chunk.css"
+    "revision": "5250304434185e103ea2",
+    "url": "/TubeYou/static/css/main.82c42692.chunk.css"
   },
   {
     "revision": "355f3e71632a9c54acbb",
     "url": "/TubeYou/static/js/2.037e207f.chunk.js"
   },
   {
-    "revision": "e70b0e472bc3e4e4c776",
+    "revision": "5250304434185e103ea2",
     "url": "/TubeYou/static/js/main.361aff03.chunk.js"
   },
   {
