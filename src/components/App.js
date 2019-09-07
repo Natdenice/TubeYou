@@ -13,7 +13,8 @@ import VideoDetails from './VideoDetails';
 
 class App extends React.Component {
   state = {
-    videos: []
+    videos: [],
+    selectedVideo: ''
   };
 
   onSearchSubmit = async term => {
