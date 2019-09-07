@@ -7,6 +7,8 @@
 
 import React from 'react';
 import './App.css';
+import { faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import SearchBar from './SearchBar';
 import youtube from '../api/youtube';
 import VideoList from './VideoList';
@@ -38,7 +40,11 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h1 className="app-title">TubeYou</h1>
+        <h1 className="app-title">
+          <FontAwesomeIcon icon={faYoutube} size="lg" style={{ marginRight: '7px' }} />
+          TubeYou
+        </h1>
+        <h2>Stream Your Life, Live Your Stream</h2>
         <div className="ui container">
           <SearchBar onSubmit={this.onSearchSubmit} />
           <div className="ui stackable two column grid">
