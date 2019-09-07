@@ -1,10 +1,13 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/aria-role */
 /* eslint-disable react/prop-types */
 import React from 'react';
 import './VideoItem.css';
 
 const VideoItem = ({ video, onSelectedVideo }) => {
   return (
-    <div className="video-item item" onClick={() => onSelectedVideo(video)}>
+    <div onClick={() => onSelectedVideo(video)} role="" className="video-item item">
       <img
         className="ui image"
         alt={video.snippet.title}

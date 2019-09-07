@@ -6,6 +6,7 @@
 /* eslint-disable react/prefer-stateless-function */
 
 import React from 'react';
+import './App.css';
 import SearchBar from './SearchBar';
 import youtube from '../api/youtube';
 import VideoList from './VideoList';
@@ -37,7 +38,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>TubeYou</h1>
+        <h1 className="app-title">TubeYou</h1>
         <div className="ui container">
           <SearchBar onSubmit={this.onSearchSubmit} />
           <div className="ui stackable two column grid">
