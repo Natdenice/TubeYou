@@ -30,7 +30,7 @@ class App extends React.Component {
         q: term
       }
     });
-    this.setState({ videos: response.data.items, selectedVideo: response.data.items[2] });
+    this.setState({ videos: response.data.items, selectedVideo: response.data.items[0] });
   };
 
   onSelectedVideo = video => {
@@ -44,7 +44,7 @@ class App extends React.Component {
           <FontAwesomeIcon icon={faYoutube} size="lg" style={{ marginRight: '7px' }} />
           TubeYou
         </h1>
-        <h2>Stream Your Life, Live Your Stream</h2>
+        <h2 className="slogan">Stream Your Life, Live Your Stream</h2>
         <div className="ui container">
           <SearchBar onSubmit={this.onSearchSubmit} />
           <div className="ui stackable two column grid">
