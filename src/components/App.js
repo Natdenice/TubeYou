@@ -6,8 +6,6 @@ import React from 'react';
 import SearchBar from './SearchBar';
 import youtube from '../api/youtube';
 
-const KEY = `${process.env.REACT_APP_API_KEY}`;
-
 class App extends React.Component {
   onSearchSubmit = async term => {
     const response = await youtube.get('/search', {
