@@ -11,7 +11,6 @@ class SearchBar extends React.Component {
 
   onSubmit = e => {
     e.preventDefault();
-    console.log(this.state.term);
   };
 
   handleOnChange = e => {
@@ -24,13 +23,16 @@ class SearchBar extends React.Component {
       <div className="search-bar ui segment">
         <form onSubmit={this.onSubmit} className="ui form">
           <div className="field">
-            <label>Search Your Video</label>
-            <input
-              value={this.state.term}
-              onChange={this.handleOnChange}
-              type="text"
-              placeholder="How to learn React ?"
-            />
+            <label htmlFor="search-term">
+              Search Your Video
+              <input
+                id="search-term"
+                value={this.state.term}
+                onChange={this.handleOnChange}
+                type="text"
+                placeholder="How to learn React ?"
+              />
+            </label>
           </div>
         </form>
       </div>
