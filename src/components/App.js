@@ -26,12 +26,16 @@ class App extends React.Component {
     this.setState({ videos: response.data.items });
   };
 
+  onSelectedVideo = video => {
+    this.setState({ selectedVideo: video });
+  };
+
   render() {
     return (
       <div className="ui container">
         <SearchBar onSubmit={this.onSearchSubmit} />
-        <VideoDetails />
-        <VideoList videos={this.state.videos} />
+        <VideoDetails video={this.state.selectedVideo} />
+        <VideoList videos={this.state.videos} onSelectedVideo={this.onSelectedVideo} />
       </div>
     );
   }
