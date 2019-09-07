@@ -3,7 +3,7 @@ import React from 'react';
 
 const VideoDetail = ({ video }) => {
   if (!video) {
-    return 'Please Type a Keyword to search a Video';
+    return <div>Please Type a Keyword to search a Video</div>;
   }
   const videoSrc = `https://www.youtube.com/embed/${video.id.videoId}?autoplay=1&enable_js=1`;
   return (
