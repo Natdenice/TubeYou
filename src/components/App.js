@@ -44,7 +44,6 @@ class App extends React.Component {
           <FontAwesomeIcon icon={faYoutube} size="lg" style={{ marginRight: '7px' }} />
           TubeYou
         </h1>
-        <h2 className="slogan">Stream Your Life, Live Your Stream</h2>
         <div className="ui container">
           <SearchBar onSubmit={this.onSearchSubmit} />
           <div className="ui stackable two column grid">
