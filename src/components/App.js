@@ -17,13 +17,17 @@ class App extends React.Component {
     selectedVideo: ''
   };
 
+  componentDidMount() {
+    this.onSearchSubmit('Live relax music');
+  }
+
   onSearchSubmit = async term => {
     const response = await youtube.get('/search', {
       params: {
         q: term
       }
     });
-    this.setState({ videos: response.data.items });
+    this.setState({ videos: response.data.items, selectedVideo: response.data.items[2] });
   };
 
   onSelectedVideo = video => {
@@ -32,15 +36,18 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="ui container">
-        <SearchBar onSubmit={this.onSearchSubmit} />
-        <div className="ui stackable two column grid">
-          <div className="row">
-            <div className="eleven wide column">
-              <VideoDetail video={this.state.selectedVideo} />
-            </div>
-            <div className="five wide column">
-              <VideoList videos={this.state.videos} onSelectedVideo={this.onSelectedVideo} />
+      <div>
+        <h1>TubeYou</h1>
+        <div className="ui container">
+          <SearchBar onSubmit={this.onSearchSubmit} />
+          <div className="ui stackable two column grid">
+            <div className="row">
+              <div className="eleven wide column">
+                <VideoDetail video={this.state.selectedVideo} />
+              </div>
+              <div className="five wide column">
+                <VideoList videos={this.state.videos} onSelectedVideo={this.onSelectedVideo} />
+              </div>
             </div>
           </div>
         </div>

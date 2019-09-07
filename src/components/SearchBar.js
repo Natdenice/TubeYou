@@ -32,7 +32,7 @@ class SearchBar extends React.Component {
                 value={this.state.term}
                 onChange={this.handleOnChange}
                 type="text"
-                placeholder="How to learn React ?"
+                placeholder="Live relax music"
               />
             </label>
           </div>
