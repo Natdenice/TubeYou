@@ -4,6 +4,7 @@
 /* eslint-disable react/state-in-constructor */
 /* eslint-disable react/prefer-stateless-function */
 import React from 'react';
+import './SearchBar.css';
 
 class SearchBar extends React.Component {
   state = {
@@ -24,8 +25,7 @@ class SearchBar extends React.Component {
       <div className="search-bar ui segment">
         <form onSubmit={this.onFormSubmit} className="ui form">
           <div className="field">
-            <label htmlFor="search-term">
-              Search Your Video
+            <label htmlFor="search-term" className="label-title">
               <input
                 id="search-term"
                 value={this.state.term}
