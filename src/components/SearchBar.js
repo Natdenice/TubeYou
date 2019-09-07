@@ -1,19 +1,23 @@
+/* eslint-disable no-console */
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable react/state-in-constructor */
 /* eslint-disable react/prefer-stateless-function */
 import React from 'react';
 
 class SearchBar extends React.Component {
-  state={
-    term: ""
-  }
+  state = {
+    term: ''
+  };
 
   onSubmit = e => {
     e.preventDefault();
-  }
-
-  handleOnChange = (e) => {
-    this.setState({term: e.target.value})
     console.log(this.state.term);
-  }
+  };
+
+  handleOnChange = e => {
+    this.setState({ term: e.target.value });
+    console.log(this.state.term);
+  };
 
   render() {
     return (
@@ -21,7 +25,12 @@ class SearchBar extends React.Component {
         <form onSubmit={this.onSubmit} className="ui form">
           <div className="field">
             <label>Search Your Video</label>
-            <input value={this.state.term} onChange={this.handleOnChange} type="text" placeholder="How to learn React ?" />
+            <input
+              value={this.state.term}
+              onChange={this.handleOnChange}
+              type="text"
+              placeholder="How to learn React ?"
+            />
           </div>
         </form>
       </div>
