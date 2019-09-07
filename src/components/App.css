@@ -5,10 +5,11 @@
 }
 
 
-.app-title {
+h1.app-title {
 color: #0094C6;
 font-size: 2.4em;
 display: flex;
 justify-content: center;
 margin-bottom: 20px;
+margin-top: 20px;
 }
