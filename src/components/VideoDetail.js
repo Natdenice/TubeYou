@@ -5,7 +5,7 @@ const VideoDetail = ({ video }) => {
   if (!video) {
     return <div>Please Type a Keyword to search a Video</div>;
   }
-  const videoSrc = `https://www.youtube.com/embed/${video.id.videoId}?autoplay=1&enable_js=1`;
+  const videoSrc = `https://www.youtube.com/embed/${video.id.videoId}?autoplay=1&showinfo=0&enablejs=1&modestbranding=1`;
   return (
     <div>
       <div className="ui embed">
