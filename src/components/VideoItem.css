@@ -8,6 +8,9 @@
   cursor: pointer;
 }
 
+
+
 .video-item .header {
   cursor: pointer;
+  color: white !important;
 }

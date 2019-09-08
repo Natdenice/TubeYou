@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
+import './VideoDetail.css';
 
 const VideoDetail = ({ video }) => {
   if (!video) {
@@ -16,7 +17,7 @@ const VideoDetail = ({ video }) => {
           allowFullScreen
         />
       </div>
-      <div className="ui segment">
+      <div className="info-box ui segment">
         <h4>{video.snippet.title}</h4>
         <p>{video.snippet.description}</p>
       </div>

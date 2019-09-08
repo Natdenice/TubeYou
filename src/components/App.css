@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: black;
+}
 
 h1.app-title {
 color: #0094C6;
@@ -13,3 +16,5 @@ justify-content: center;
 margin-bottom: 20px;
 margin-top: 20px;
 }
+
+
