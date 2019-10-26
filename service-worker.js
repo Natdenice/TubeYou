@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/TubeYou/precache-manifest.927dde9b2ef9f81758b6722bc6d1ee0e.js"
+  "/TubeYou/precache-manifest.d98cd8b23d94ff2b034f13cddddd10ca.js"
 );
 
 self.addEventListener('message', (event) => {
