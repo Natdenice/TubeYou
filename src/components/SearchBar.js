@@ -24,7 +24,7 @@ class SearchBar extends React.Component {
 
   render() {
     return (
-      <div className="search-bar">
+      <div className="search-bar" id="custom-search-bar">
         <form onSubmit={this.onFormSubmit} className="ui form">
           <div className="field">
             <label htmlFor="search-term" className="label-title">

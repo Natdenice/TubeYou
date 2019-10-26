@@ -1,4 +1,12 @@
-.search-bar {
+#custom-search-bar {
   margin-bottom: 20px;
   margin-top: 20px;
+}
+
+#custom-search-bar input,
+select,
+textarea {
+  color: #016fb9;
+  font-weight: 500;
+  font-size: 1.05rem;
 }
