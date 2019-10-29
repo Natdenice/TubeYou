@@ -16,8 +16,8 @@ h1.app-title {
   margin-bottom: 20px;
   margin-top: 20px;
   animation-name: moveInLeft;
-  animation-duration: 2.5s;
-  animation-timing-function: ease-out;
+  animation-duration: 2.3s;
+  animation-timing-function: ease-in-out;
 }
 
 @keyframes moveInLeft {
@@ -26,7 +26,8 @@ h1.app-title {
     transform: translateX(-100px);
   }
   80% {
-    transform: translateX(20px);
+    opacity: 0.8;
+    transform: translateX(30px);
   }
   100% {
     opacity: 1;
